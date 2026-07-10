@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual Environment
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# Environment Variables
+.env
+
+# Data
+data/raw/
+data/processed/
+!data/raw/README.md
+!data/processed/README.md
+
+# Excel & CSV
+*.xlsx
+*.xls
+*.csv
+
+# Power BI
+*.pbix
+
+# OS
+.DS_Store
+Thumbs.db
