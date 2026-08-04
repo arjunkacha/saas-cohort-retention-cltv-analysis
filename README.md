@@ -2,39 +2,41 @@
 
 ## 🚀 Project Overview
 
-Customer retention is one of the most important growth metrics for SaaS and e-commerce businesses. Acquiring new customers is significantly more expensive than retaining existing ones. This project uses Cohort Analysis to measure customer retention over time and Customer Lifetime Value (CLTV) analysis to estimate long-term customer profitability.
+Customer retention is one of the most important growth metrics for SaaS and e-commerce businesses. Acquiring new customers is significantly more expensive than retaining existing ones. This project applies **Cohort Analysis** to measure customer retention over time and **Customer Lifetime Value (CLTV)** analysis to estimate long-term customer profitability.
 
-Using the **Online Retail II** dataset, this project identifies customer churn patterns, measures retention rates across acquisition cohorts, and provides actionable business insights to improve customer loyalty and revenue.
+Using the **Online Retail II** dataset, this project identifies customer churn patterns, evaluates retention across acquisition cohorts, segments customers based on lifetime value, and provides actionable business insights to improve customer loyalty and maximize revenue.
 
 ---
 
-## 🎯 Project Objectives
+# 🎯 Project Objectives
 
 - Clean and preprocess transactional retail data
-- Perform customer cohort analysis
+- Perform Exploratory Data Analysis (EDA)
+- Build customer cohort retention matrix
 - Measure monthly customer retention
 - Calculate Customer Lifetime Value (CLTV)
-- Visualize customer retention trends
-- Generate business recommendations based on data
-- Build an interactive Power BI dashboard (Final Phase)
+- Segment customers based on CLTV
+- Visualize customer retention and customer value
+- Build an interactive Power BI dashboard
+- Generate business recommendations
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **SQL**
-- **Power BI**
-- **Google Colab / Jupyter Notebook**
-- **Git & GitHub**
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SQL
+- Power BI
+- Google Colab / Jupyter Notebook
+- Git & GitHub
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 saas-cohort-retention-cltv-analysis/
@@ -44,8 +46,7 @@ saas-cohort-retention-cltv-analysis/
 │   └── processed/
 │
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb
-│   └── 02_cohort_retention_analysis.ipynb
+│   └── project_2_cohort_retention_cltv_analysis.ipynb
 │
 ├── images/
 │   ├── retention_heatmap.png
@@ -56,7 +57,8 @@ saas-cohort-retention-cltv-analysis/
 ├── sql/
 │
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
@@ -73,14 +75,15 @@ saas-cohort-retention-cltv-analysis/
 - Removed invalid quantities and prices
 - Removed duplicate records
 - Converted InvoiceDate to datetime format
-- Created Revenue column
+- Created Revenue feature
 - Generated Invoice Month
 - Generated Cohort Month
 - Calculated Cohort Index
+- Prepared analysis-ready dataset
 
 ### Deliverable
 
-- Cleaned and analysis-ready transactional dataset
+- Cleaned and feature-engineered transactional dataset ready for customer analytics
 
 ---
 
@@ -99,56 +102,80 @@ saas-cohort-retention-cltv-analysis/
 ### Key Insights
 
 - Customer retention drops significantly after the first month.
-- A small percentage of customers continue purchasing over many months, indicating a loyal customer segment.
-- Early customer engagement is critical to improving long-term retention.
+- A small percentage of customers continue purchasing over many months.
+- Early customer engagement plays a critical role in long-term retention.
 
 ---
 
-## 📈 Visualizations
+## ✅ Week 3 – Customer Lifetime Value (CLTV) Analysis
+
+### Completed Tasks
+
+- Calculated Average Order Value (AOV)
+- Calculated Purchase Frequency
+- Estimated Customer Lifespan
+- Calculated Historical Customer Lifetime Value (CLTV)
+- Segmented customers into value-based categories
+- Visualized CLTV distribution
+- Identified top high-value customers
+- Generated business insights and recommendations
+
+### Key Insights
+
+- Premium customers contribute a significant share of overall revenue.
+- Customers with higher purchase frequency generate substantially greater lifetime value.
+- Extending customer lifespan has a direct positive impact on CLTV.
+- Customer segmentation enables targeted marketing and personalized retention strategies.
+
+---
+
+# 📈 Visualizations
 
 ### Customer Cohort Retention Heatmap
 
 ![Customer Cohort Retention Heatmap](images/retention_heatmap.png)
 
-### Average Retention Decay Curve
+### Average Retention Curve
 
 ![Average Retention Curve](images/retention_curve.png)
 
+### Upcoming Visualizations
+
+- Customer Lifetime Value Distribution
+- Customer Segment Distribution
+- Top Customers by CLTV
+- Power BI Dashboard
+
 ---
 
-## 📌 Dataset
+# 📌 Dataset
 
-**Online Retail II Dataset**
+**Dataset:** Online Retail II
 
-The dataset contains transactional data from a UK-based online retailer between 2009 and 2011.
+The dataset contains transactional records of a UK-based online retailer between **December 2009 and December 2011**.
 
-**Source:**
+**Source**
 
 https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci
 
-> **Note:** The raw dataset is not included in this repository due to its size and Kaggle's distribution policy.
+> **Note:** The raw dataset is not included in this repository because of its size and Kaggle's distribution policy.
 
 ---
 
-## 🚧 Upcoming Work
+# 🚧 Remaining Work
 
-### Week 3 – Customer Lifetime Value (CLTV)
+## ✅ Week 4 – Business Intelligence & Reporting
 
-- Average Order Value (AOV)
-- Purchase Frequency
-- Customer Value
-- Historical CLTV Calculation
-- Customer Segmentation
-
-### Week 4 – Business Intelligence & Reporting
-
-- Power BI Dashboard
+- Interactive Power BI Dashboard
+- KPI Cards
+- Customer Retention Dashboard
+- CLTV Dashboard
 - Executive Summary
 - Strategic Business Recommendations
-- GitHub Project Documentation
+- Final Project Documentation
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project was developed as part of a **Data Analytics Internship** and is intended for educational and portfolio purposes.
